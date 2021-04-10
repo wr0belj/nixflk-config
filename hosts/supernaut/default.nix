@@ -28,7 +28,7 @@
     };
 
     initrd.luks.devices.luksroot = {
-      device = "/dev/disk/by-uuid/aefac24a-ef27-466c-b7cf-e0756a801439";
+      device = "/dev/disk/by-partlabel/nixos";
       preLVM = true;
       allowDiscards = true;
     };
@@ -51,7 +51,6 @@
       libinput.enable = true;
       videoDrivers = [ "modesetting" ];
       useGlamor = true;
-      #windowManager.i3.enable = true;
       displayManager = {
         lightdm.enable = true;
         defaultSession = "xsession";
@@ -82,9 +81,9 @@
   hardware.pulseaudio.enable = true;
 
   # User account.
-  users.users.jakubwrobel = {
+  users.users.wrobelj = {
     isNormalUser = true;
-    home = "/home/jakubwrobel";
+    home = "/home/wrobelj";
     description = "Jakub Wrobel";
     extraGroups = [ "wheel" ]; 
   };
@@ -108,7 +107,7 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "20.09"; # Did you read the comment?
+  system.stateVersion = "21.05"; # Did you read the comment?
 
 }
 
