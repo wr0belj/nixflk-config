@@ -20,6 +20,10 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
+  
+  manual.json.enable = false;
+  manual.html.enable = false;
+  manual.manpages.enable = false;
 
   # Personal information.
   home = {

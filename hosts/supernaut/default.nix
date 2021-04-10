@@ -56,7 +56,7 @@
         defaultSession = "xsession";
         autoLogin = {
           enable = true;
-          user = "jakubwrobel";
+          user = "wrobelj";
         };
         session = [
 	  {

@@ -5,8 +5,5 @@
     userSettings = {
 
     };
-    extensions = with pkgs.vscode-extensions; [
-      bbenoist.Nix
-    ];
   };
 }
