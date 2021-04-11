@@ -16,6 +16,9 @@
 
     # Import configs of services managed by home-manager.
     ./services/default.nix
+
+    # Import Xorg configuration.
+    ./xsession/default.nix
   ];
 
   # Let Home Manager install and manage itself.

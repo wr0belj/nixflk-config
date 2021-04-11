@@ -10,6 +10,12 @@
     ];
   
   # Nix config
+  nix = {
+    package = pkgs.nixFlakes;
+    extraOptions = ''
+      experimental-features = nix-command flakes
+    '';
+  };
   nixpkgs.config.allowUnfree = true;
 
   # Hardware
