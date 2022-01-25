@@ -5,7 +5,7 @@
 {
   imports =
     [
-      ./hardware-configuration.nix
+      ./hardware.nix
       ../home.nix
     ];
   
@@ -34,14 +34,14 @@
     };
 
     initrd.luks.devices.luksroot = {
-      device = "/dev/disk/by-partlabel/nixos";
+      device = "/dev/disk/by-partlabel/nixos_luks";
       preLVM = true;
       allowDiscards = true;
     };
   };
 
   networking = {
-    hostName = "supernaut";
+    hostName = "thewizard";
     useDHCP = false;
     interfaces.enp0s31f6.useDHCP = true;
     interfaces.wlan0.useDHCP = true;
@@ -62,7 +62,7 @@
         defaultSession = "xsession";
         autoLogin = {
           enable = true;
-          user = "wrobelj";
+          user = "wr0belj";
         };
         session = [
 	  {
@@ -77,9 +77,6 @@
       enable = true;
     };
     gnome3.gnome-keyring.enable = true;
-    #udev.extraRules = ''
-    #	ACTION=="change", SUBSYSTEM=="drm", RUN+="${/home/jakubwrobel/test/test.sh}", OWNER="jakubwrobel"
-    #'';
   };
 
   # Sound.
@@ -87,9 +84,9 @@
   hardware.pulseaudio.enable = true;
 
   # User account.
-  users.users.wrobelj = {
+  users.users.wr0belj = {
     isNormalUser = true;
-    home = "/home/wrobelj";
+    home = "/home/wr0belj";
     description = "Jakub Wrobel";
     extraGroups = [ "wheel" ]; 
   };

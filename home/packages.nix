@@ -3,7 +3,7 @@
     home.packages = with pkgs; [
         tdesktop
         pavucontrol
-        flameshot
+        #flameshot
         pfetch
         feh
         psmisc

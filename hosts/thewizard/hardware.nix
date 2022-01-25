@@ -13,11 +13,11 @@
   # Partitions
   fileSystems = {
     "/" = { 
-      device = "/dev/nixosVG/root";
+      device = "/dev/nixos_VG/root";
       fsType = "ext4";
     };
     "/boot" = { 
-      device = "/dev/disk/by-label/esp";
+      device = "/dev/disk/by-label/ESP";
       fsType = "vfat";
     };
   };

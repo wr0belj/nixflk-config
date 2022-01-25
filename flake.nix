@@ -9,7 +9,7 @@
   outputs = inputs: 
   with inputs; {
     nixosConfigurations = {
-      supernaut = nixpkgs.lib.nixosSystem {
+      thewizard = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./hosts/supernaut/default.nix
@@ -17,7 +17,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.wrobelj = import ./home/default.nix;
+            home-manager.users.wr0belj = import ./home/default.nix;
           }
         ];
         specialArgs = { inherit inputs; };
