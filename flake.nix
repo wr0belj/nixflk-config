@@ -12,7 +12,7 @@
       thewizard = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./hosts/supernaut/default.nix
+          ./hosts/thewizard/default.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;

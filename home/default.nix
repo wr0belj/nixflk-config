@@ -30,8 +30,8 @@
 
   # Personal information.
   home = {
-    username = "wrobelj";
-    homeDirectory = "/home/wrobelj";
+    username = "wr0belj";
+    homeDirectory = "/home/wr0belj";
   };
 
   # This value determines the Home Manager release that your

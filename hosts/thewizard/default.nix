@@ -76,7 +76,7 @@
     printing = {
       enable = true;
     };
-    gnome3.gnome-keyring.enable = true;
+    gnome.gnome-keyring.enable = true;
   };
 
   # Sound.

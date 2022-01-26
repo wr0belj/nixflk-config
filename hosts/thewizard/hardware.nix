@@ -13,7 +13,7 @@
   # Partitions
   fileSystems = {
     "/" = { 
-      device = "/dev/nixos_VG/root";
+      device = "/dev/nixos_vg/root";
       fsType = "ext4";
     };
     "/boot" = { 
@@ -23,7 +23,7 @@
   };
   swapDevices = [ 
     {
-      device = "/dev/nixosVG/swap";
+      device = "/dev/nixos_vg/swap";
     }
   ];
 
