@@ -16,31 +16,31 @@ in with config; {
       keybindings = lib.mkOptionDefault {
          "${mod}+q" = "kill";
          "${mod}+Return" = "exec ${term}";
-         "${mod}+Shift+s" = "exec flameshot gui";
+         "${mod}+Shift+s" = "exec maim -s | xclip -selection clipboard -t image/png";
          "${mod}+r" = "exec rofi -show drun";
       };
       colors = {
         background = "${colors.background0}";
         focused = {
-          border =  "${colors.cyan}";
-          childBorder =  "${colors.cyan}";
+          border =  "${colors.magenta}";
+          childBorder =  "${colors.magenta}";
           background = "${colors.background0}";
           text = "${colors.foreground0}";
-          indicator = "${colors.cyanBright}";
+          indicator = "${colors.magentaBright}";
         };
         focusedInactive = {
           border =  "${colors.blue}";
-          childBorder =  "${colors.cyanBright}";
+          childBorder =  "${colors.magentaBright}";
           background = "${colors.background0}";
           text = "${colors.foreground0}";
-          indicator = "${colors.cyanBright}";
+          indicator = "${colors.magentaBright}";
         };
         unfocused = {
           border =  "${colors.background0}";
           childBorder =  "${colors.background0}";
           background = "${colors.background0}";
           text = "${colors.foreground0}";
-          indicator = "${colors.cyanBright}";
+          indicator = "${colors.magentaBright}";
         };
       };
       startup = [

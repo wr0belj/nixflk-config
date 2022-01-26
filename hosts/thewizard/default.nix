@@ -101,6 +101,7 @@
 
   fonts.fonts = with pkgs; [
     iosevka
+    jetbrains-mono
     font-awesome
   ];
 

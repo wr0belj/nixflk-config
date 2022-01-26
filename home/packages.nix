@@ -8,5 +8,10 @@
         feh
         psmisc
         gnome3.adwaita-icon-theme
+        google-chrome
+        discord
+        inkscape
+        maim
+        xclip
     ];
 }

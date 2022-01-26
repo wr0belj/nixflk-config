@@ -2,7 +2,7 @@
 with pkgs; {
   programs.git = {
     enable = true;
-    #userName  = "Jakub Wróbel";
-    #userEmail = "40501814+wrobeljakub@users.noreply.github.com";
+    userName  = "wr0belj";
+    userEmail = "wr00belj@gmail.com";
   };
 }

@@ -1,5 +1,5 @@
 {
     imports = [
-        ./nord.nix
+        ./onedark.nix
     ];
 }

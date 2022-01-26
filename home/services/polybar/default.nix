@@ -18,7 +18,7 @@ with config; {
         fixed-center = true;
 
         # Bar colors
-        background = "${colors.background1}";
+        background = "${colors.background0}";
         foreground = "${colors.foreground0}";
 
         line-size = 3;
@@ -51,7 +51,7 @@ with config; {
         fixed-center = true;
 
         # Bar colors
-        background = "${colors.background1}";
+        background = "${colors.background0}";
         foreground = "${colors.foreground0}";
 
         line-size = 3;
@@ -74,25 +74,6 @@ with config; {
         module-margin-right = 2;
       };
       
-      "module/bspwm" = {
-        type = "internal/bspwm";
-
-        label-focused = "%name%";
-        label-focused-foreground = "${colors.cyan}";
-        label-focused-padding = 1;
-        
-
-        label-occupied = "%name%";
-        label-occupied-foreground = "${colors.foreground0}";
-        label-occupied-padding = 1;
-
-        label-urgent = "%index%!";
-        label-urgent-background = "${colors.red}";
-        label-urgent-padding = 1;
-
-        label-empty = "" ;
-      };
-
       "module/i3" = {
         type = "internal/i3";
         format = "<label-state> <label-mode>";
@@ -104,12 +85,12 @@ with config; {
 
         label-mode-padding = 0;
         label-mode-foreground = "${colors.foreground0}";
-        label-mode-background = "${colors.cyan}";
+        label-mode-background = "${colors.magenta}";
 
         # Active workspace on focused monitor
         label-focused = "%name%";
-        label-focused-background = "${colors.background1}";
-        label-focused-foreground = "${colors.cyan}";
+        label-focused-background = "${colors.background0}";
+        label-focused-foreground = "${colors.magenta}";
         label-focused-padding = 1;
 
         # Inactive workspace on any monitor
@@ -119,7 +100,7 @@ with config; {
 
         # Active workspace on unfocused monitor
         label-visible = "%name%";
-        label-visible-background = "${colors.background1}";
+        label-visible-background = "${colors.background0}";
         label-visible-foreground = "${colors.blue}";
         label-visible-padding = 1;
 
@@ -132,7 +113,7 @@ with config; {
       "module/title" = {
         type = "internal/xwindow";
         format = "<label>";
-        format-foreground = "${colors.blue}";
+        format-foreground = "${colors.foreground2}";
         format-padding = 0;
 
         label = "%title%";
@@ -148,7 +129,7 @@ with config; {
 
         # The connected state
         format-connected-prefix = " ";
-        format-connected-prefix-foreground = "${colors.cyan}";
+        format-connected-prefix-foreground = "${colors.magenta}";
         label-connected = "%essid%";
 
         # The disconnected state
@@ -164,7 +145,7 @@ with config; {
 
         # The connected state
         format-connected-prefix = " ";
-        format-connected-prefix-foreground = "${colors.cyan}";
+        format-connected-prefix-foreground = "${colors.magenta}";
         label-connected = "connected";
 
         # The disconnected state
@@ -192,7 +173,7 @@ with config; {
 
         # Charging state
         format-charging = "<animation-charging> <label-charging>";
-        animation-charging-foreground = "${colors.cyan}";
+        animation-charging-foreground = "${colors.magenta}";
         # Charging animation
         animation-charging-0 = "";
         animation-charging-1 = "";
@@ -203,7 +184,7 @@ with config; {
         # Discharging state
         format-discharging = "<ramp-capacity> <label-discharging>";
         # Discharging animation
-        ramp-capacity-foreground = "${colors.cyan}";
+        ramp-capacity-foreground = "${colors.magenta}";
         ramp-capacity-0 = "";
         ramp-capacity-1 = "";
         ramp-capacity-2 = "";
@@ -212,7 +193,7 @@ with config; {
 
         # Full state
         format-full-prefix = " ";
-        format-full-prefix-foreground = "${colors.cyan}";
+        format-full-prefix-foreground = "${colors.magenta}";
       };
 
       "module/pulseaudio" = {
@@ -221,14 +202,14 @@ with config; {
         # Unmuted state
         format-volume = "<ramp-volume> <label-volume>";
         # Volume indictator
-        ramp-volume-foreground = "${colors.cyan}";
+        ramp-volume-foreground = "${colors.magenta}";
         ramp-volume-0 = "";
         ramp-volume-1 = "";
         ramp-volume-2 = "";
 
         # Muted state
         format-muted-prefix = " ";
-        format-muted-prefix-foreground = "${colors.cyan}";
+        format-muted-prefix-foreground = "${colors.magenta}";
         label-muted = "muted";
       };
 

@@ -23,5 +23,6 @@
         specialArgs = { inherit inputs; };
       };
     };
+    thewizard = self.nixosConfigurations.thewizard.config.system.build.toplevel;
   };
 }
